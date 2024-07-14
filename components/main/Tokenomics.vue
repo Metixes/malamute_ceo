@@ -1,27 +1,12 @@
 <template>
   <section class="container">
     <div class="wrapper dog-coins">
-      <div class="dog-coins-image">
-        <NuxtImg
-          width="324"
-          height="278"
-          src="images/main/dog2.webp"
-          alt="Dog" />
-      </div>
-      <!-- <div class="dog-coins-info">
-        <p class="dog-coins-info-text">
-          The Dogecoin community cares about supporting each other, being kind,
-          teaching people about cryptocurrency, fundraising, having fun, making
-          memes, and being absurd. This is nicely captured by Dogecoin’s
-          unofficial
-        </p>
-        <span class="dog-coins-info-btn btn">Buy now</span>
-      </div> -->
       <ul class="dog-coins-info">
-        <li class="dog-coins-info-text">Based</li>
-        <li class="dog-coins-info-text">Brilliant</li>
-        <li class="dog-coins-info-text">Ready to buy</li>
-        <span class="dog-coins-info-btn btn">Buy now</span>
+        Change to the following:
+        <li class="dog-coins-info-text">LP burned</li>
+        <li class="dog-coins-info-text">Mint authority revoked</li>
+        <li class="dog-coins-info-text">Freeze authority revoked</li>
+        <span class="">Malamute is a good boy, he plays it clean</span>
       </ul>
     </div>
   </section>
@@ -38,7 +23,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 48px;
 
   &-image {
@@ -57,13 +42,14 @@
   }
 
   &-info {
-    flex: 1;
+    width: fit-content;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 18px;
 
     &-text {
+      width: 100%;
       list-style-type: disc;
       color: var(--primary);
 

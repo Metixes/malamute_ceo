@@ -1,15 +1,15 @@
 <template>
   <section id="contact" class="container">
     <div class="wrapper contact">
-      <h3 class="contact-title">Contact</h3>
-      <NuxtImg class="logo" src="images/main/logo.svg" alt="Malamute Ceo" />
-      <p class="contact-text">
+      <h3 class="contact-title">Socials</h3>
+      <!-- <NuxtImg class="logo" src="images/main/logo.svg" alt="Malamute Ceo" /> -->
+      <!-- <p class="contact-text">
         The Dogecoin community cares about supporting each other, being kind,
         teaching people about cryptocurrency, fundraising, having fun, making
         memes, and being absurd. This is nicely captured by Dogecoin’s
         unofficial tagline: Do Only Good Everyday. Get involved in our awesome
         community via the below links.
-      </p>
+      </p> -->
       <div class="contact-social">
         <div
           class="contact-social-icon-wrapper contact-social-icon-wrapper-telegram">

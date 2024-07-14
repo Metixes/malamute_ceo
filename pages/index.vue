@@ -2,9 +2,10 @@
   <div>
     <MainHero />
     <MainAbout />
-    <MainGettingStarted />
+    <!-- <MainGettingStarted /> -->
     <MainWhatIsMalamute />
-    <MainFaq />
+    <MainTokenomics />
+    <!-- <MainFaq /> -->
     <MainContact />
     <MainDogecoin />
   </div>

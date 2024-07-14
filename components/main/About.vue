@@ -18,18 +18,16 @@
         </div>
       </div>
       <div class="about-info">
-        <h3 class="about-info-title">About Malamute CEO</h3>
+        <h3 class="about-info-title">What is Malamute?</h3>
         <p class="about-info-text">
-          Pepe is tired of watching everyone play hot potato with the endless
-          derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu’s
-          have had their day. It’s time for the most recognizable meme in the
-          world to take his reign as king of the memes.
+          Malamute is a good boy with a knack for marketing who rose from park
+          bench nobody to CEO of memecoins. His rise to the top was paved with
+          his insightful critiques of dog biscuits and his undeniable canine
+          charisma. Nicknamed "The Barketing Whiz," Malamute is a legend,
+          proving success can come with wagging tails and a love for squirrels.
         </p>
         <p class="about-info-text">
-          Pepe is here to make memecoins great again. Launched stealth with no
-          presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin
-          for the people, forever. Fueled by pure memetic power, let $PEPE show
-          you the way.
+          Is Malamute a Husky? No, he is just a Malamute.
         </p>
       </div>
     </div>

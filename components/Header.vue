@@ -16,13 +16,13 @@
             :external="true"
             >About</NuxtLink
           >
-          <NuxtLink
+          <!-- <NuxtLink
             @click="showBurgerMenu"
             class="nav_link"
             :to="{ path: '/', hash: '#gettingStarted' }"
             :external="true"
             >Getting Started</NuxtLink
-          >
+          > -->
           <NuxtLink
             @click="showBurgerMenu"
             class="nav_link"
@@ -30,22 +30,47 @@
             :external="true"
             >Video</NuxtLink
           >
-          <NuxtLink
+          <!-- <NuxtLink
             @click="showBurgerMenu"
             class="nav_link"
             :to="{ path: '/', hash: '#faq' }"
             :external="true"
             >Faq</NuxtLink
-          >
+          > -->
           <NuxtLink
             @click="showBurgerMenu"
             class="nav_link"
             :to="{ path: '/', hash: '#contact' }"
             :external="true"
-            >Contact</NuxtLink
+            >Social</NuxtLink
           >
         </nav>
-        <span class="btn">Buy Now</span>
+        <div>
+          <span class="user-contract" style="color: black">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </g>
+            </svg>
+            {{ contractId.slice(0, 3) + "..." + contractId.slice(-4) }}
+          </span>
+        </div>
+        <span v-if="width > 600" class="btn">Buy Now</span>
         <div @click="showBurgerMenu" class="menu-wrapper">
           <div
             :class="['hamburger-menu', { 'hamburger-active': showMenu }]"></div>
@@ -58,11 +83,14 @@
 <script setup>
 import { ref, watch } from "vue";
 import { useMediaQuery, useWindowScroll } from "@vueuse/core";
+import { useWindowSize } from "@vueuse/core";
 
 const { y } = useWindowScroll();
 const isSm = useMediaQuery("(max-width: 992px)");
 const showMenu = ref(false);
 const headerSticky = ref(false);
+const contractId = ref("0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae");
+const { width, height } = useWindowSize();
 
 const showBurgerMenu = () => {
   if (!isSm.value) {
@@ -167,6 +195,12 @@ watch(
 
     z-index: 4;
   }
+}
+
+.user-contract {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .active {
